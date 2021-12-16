@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+     height: 100vh;
+     width: 100%;
+     position: relative;
+}
+.container img{
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+}
+.wrapper{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 100%;
+     width: 100%;
+     position:absolute;
+     top: 0;
+}
+.content{
+    height: 250px;
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: -1px 2px 15px rgba(128, 128, 128, 0.726);
+    padding-top: 10px;
+    background: rgba(0, 0, 0, 0.329) ;
+    z-index: 50;
+    position: relative;
+}
+.search-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+}
+.content input{
+    width: 300px;
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: inset -1px 2px  10px grey;
+    outline: none;
+    background: rgba(255, 255, 255, 0.219);
+    font-size: 15px;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 600;
+   
+}
+.container input::placeholder{
+    color:white;
+    opacity: .7;
+}
+.content input:focus{
+     background-color: rgba(245, 245, 245, 0.411);
+     color:  whitesmoke;
+}
+.search-bar #search-icon{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    border: none;
+}
+.search-bar #search-icon:hover{
+    background-color:white;
+    color:rgba(0, 0, 0, 0.822);
+    border: 2px solid black;
+}
+.location-name{
+    font-weight: 200;
+    color: whitesmoke;
+    padding: 8px;
+    font-size: 20px;
+    font-family: "poppins", sans-serif;
+    margin-top: 0px;
+}
+.icon{
+    height: 45px;
+    width: 45px;
+}
+.icon img{
+    height: 100%;
+    width: 100%;
+}
+.temp{
+    padding-left: 30px;
+    padding-bottom: 8px;
+    font-size: 25px;
+    margin-bottom: 0;
+    margin-top: 0;
+    display: flex;
+    color:  orange;
+}
+.description{
+    display: flex;
+    padding-left: 8px;
+    align-items: center;
+    text-transform: capitalize;
+    color: skyblue;
+}
+.description .icon{
+    margin-right: 2px;
+}
+.description .des{
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: .5px;
+}
+.others{
+    padding: 9px;
+}
+.others h4{
+    padding-top: 4px;
+}
+#humility, #speed{
+    color: wheat;
+    font-size: 14px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.time{
+    padding-right: 5px;
+    font-size: 12px;
+    width: 50%;
+     color: blanchedalmond;
+}
+ .loading{
+    visibility: hidden;
+}
+ .loading::after{
+    visibility: visible;
+    content: "Loading....";
+    position:absolute;
+    bottom:  18px;
+    padding-left: 15px;
+    color: white;
+    font-size: 20px;
+    font-family:"poppins", sans-serif;;
+}
